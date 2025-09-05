@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>RECON Workshop</title>
-  <!-- Import Google Fonts (Roboto, Open Sans as backup) -->
+  <!-- Google Fonts for clean academic style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -19,47 +19,58 @@
       font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      padding: 20px 50px;
+    }
+
+    header img {
+      height: 80px; /* adjust logo size */
+      width: auto;
     }
 
     .button-container {
-      margin-top: 80px; /* keep buttons near the top 20% */
       display: flex;
-      gap: 50px;
-      flex-wrap: wrap;
-      justify-content: center;
+      gap: 30px;
     }
 
     .nav-button {
       font-size: 18px;
       font-weight: 700;
-      color: #000; /* black text */
-      text-transform: uppercase; /* ALL CAPS */
+      color: #000;
+      text-transform: uppercase;
       text-decoration: none;
-      background: none; /* no background */
+      background: none;
       border: none;
       cursor: pointer;
-      letter-spacing: 1px; /* academic, clean spacing */
+      letter-spacing: 1px;
       transition: color 0.3s, transform 0.2s;
     }
 
     .nav-button:hover {
-      color: #d35400; /* academic orange highlight */
-      transform: scale(1.05); /* subtle hover effect */
+      color: #d35400;
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <div class="button-container">
-    <a href="home.html" class="nav-button">HOME</a>
-    <a href="schedule.html" class="nav-button">SCHEDULES</a>
-    <a href="contribution.html" class="nav-button">CONTRIBUTIONS</a>
-    <a href="speaker.html" class="nav-button">SPEAKER</a>
-    <a href="submission.html" class="nav-button">SUBMISSIONS</a>
-  </div>
+  <header>
+    <!-- Logo on top left -->
+    <img src="images/logo.jpg" alt="RECON Workshop Logo">
+    
+    <!-- Navigation buttons on top right -->
+    <div class="button-container">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="program.html" class="nav-button">Program</a>
+      <a href="speakers.html" class="nav-button">Speakers</a>
+      <a href="cfp.html" class="nav-button">Call for Papers</a>
+      <a href="registration.html" class="nav-button">Registration</a>
+      <a href="contact.html" class="nav-button">Contact</a>
+    </div>
+  </header>
 </body>
 </html>
-
-
-
