@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>RECON Workshop</title>
+  <!-- Import Google Fonts (Roboto, Open Sans as backup) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       padding: 0;
       height: 100vh;
       width: 100vw;
-      background-image: url("images/background.jpg"); /* background file in same folder */
+      background-image: url("images/background.jpg");
       background-repeat: no-repeat;
       background-position: center center;
       background-attachment: fixed;
       background-size: cover;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', 'Open Sans', Helvetica, Arial, sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -22,39 +24,40 @@
     }
 
     .button-container {
-      margin-top: 40px; /* buttons in the top 20% */
+      margin-top: 40px; /* keep buttons near the top 20% */
       display: flex;
-      gap: 15px;
+      gap: 30px;
       flex-wrap: wrap;
       justify-content: center;
     }
 
     .nav-button {
-      padding: 12px 24px;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.6);
-      border: none;
-      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #000; /* black text */
+      text-transform: uppercase; /* ALL CAPS */
       text-decoration: none;
+      background: none; /* no background */
+      border: none;
       cursor: pointer;
-      transition: background-color 0.3s;
+      letter-spacing: 1px; /* academic, clean spacing */
+      transition: color 0.3s, transform 0.2s;
     }
 
     .nav-button:hover {
-      background-color: rgba(255, 69, 0, 0.8);
+      color: #d35400; /* academic orange highlight */
+      transform: scale(1.05); /* subtle hover effect */
     }
   </style>
 </head>
 <body>
   <div class="button-container">
-    <a href="page1.html" class="nav-button">Page 1</a>
-    <a href="page2.html" class="nav-button">Page 2</a>
-    <a href="page3.html" class="nav-button">Page 3</a>
-    <a href="page4.html" class="nav-button">Page 4</a>
-    <a href="page5.html" class="nav-button">Page 5</a>
-    <a href="page6.html" class="nav-button">Page 6</a>
+    <a href="page1.html" class="nav-button">PAGE 1</a>
+    <a href="page2.html" class="nav-button">PAGE 2</a>
+    <a href="page3.html" class="nav-button">PAGE 3</a>
+    <a href="page4.html" class="nav-button">PAGE 4</a>
+    <a href="page5.html" class="nav-button">PAGE 5</a>
+    <a href="page6.html" class="nav-button">PAGE 6</a>
   </div>
 </body>
 </html>
