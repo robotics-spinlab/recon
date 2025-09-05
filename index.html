@@ -9,7 +9,10 @@
       padding: 0;
       height: 100vh;
       width: 100vw;
-      background: url("background.jpg") no-repeat center center fixed;
+      background-image: url("images/background.jpg"); /* background file in same folder */
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
       background-size: cover;
       font-family: Arial, sans-serif;
       display: flex;
@@ -19,7 +22,7 @@
     }
 
     .button-container {
-      margin-top: 40px; /* ensures buttons are in the top 20% */
+      margin-top: 40px; /* buttons in the top 20% */
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
